@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e9d5109193.js" crossorigin="anonymous" defer></script>
+  <script src="script.js" defer></script>  
+  <title>Tracking COVID-19</title>
+</head>
+<body>
+  <section id="App">
+    <section class='dataSection'>
+      <div class='title'>
+        <div class='logocovid'>
+          <div class='circle'></div>
+          <div class='line'></div>
+          <div class='line2'></div>
+        </div>
+        <h1>
+          Tracking COVID-19 group of volunteers provided the most complete and accurate data about COVID-19 in the US.
+        </h1>
+        <time class='lastDate' lastDate></time>
+         <!--comboBox-->
+        <select id="states">
+          <option selected>US</option>          
+        </select>
+      </div>
+      
+      <div class='death'>
+        <h2>
+          death
+          <p death></p>
+        </h2>
+      </div>
+     
+      <div class='hospitalized'>
+        <h2>
+          History of hospitalized
+        </h2>
+        <div>
+          <p>
+            Hospitalized by COVID-19
+            <i hospitalized></i>
+          </p>
+          <p>
+            Hospitalized currently
+            <i hospitalizedCurrently></i>
+          </p>
+          <p>
+            Currently on ventilator
+            <i withVentilator></i>
+          </p>
+        </div>
+      </div>
+     
+      <div class='tests'>
+        <h2>
+          COVID-19 tests
+        </h2>
+        <div>
+          <p>
+            Negative:
+           <i class='negative' negative></i>
+          <p>
+            Positive:
+           <i  class='positive' positive></i>
+          </p>
+          <p>
+            Total test results to date:
+           <i  class='total' totalTestResults></i>
+        </div>
+      </div>
+      
+      <div class='info'>
+        <p>
+        This is only part of the information provided by
+        The COVID Tracking Project <a href='https://covidtracking.com/data'>click here </a>to find out more... 
+        </p>
+      </div>
+    </section>
+  <section class="scrollSection">
+      <div class="continerElements">
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-right">
+            <h2>
+              protect yourself and others | Centers for Disease Control and Prevention
+            </h2>
+          </div>
+        </section>
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-bottom">
+            <i class="fa-solid fa-syringe"></i>
+            <div>
+              <h3>
+                Get Vaccinated and stay up to date on your COVID-19 vaccines
+              </h3>
+              <ul>
+                <li>
+                  COVID-19 vaccines are effective at preventing you from getting sick. COVID-19 vaccines are highly effective at preventing severe illness, hospitalizations, and death.
+                </li>
+                <li>
+                  Getting vaccinated is the best way to slow the spread of SARS-CoV-2, the virus that causes COVID-19.
+                </li>
+                <li>
+                  CDC recommends that everyone who is eligible stay up to date on their COVID-19 vaccines, including people with weakened immune systems.
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-right">
+            <i class="fa-solid fa-head-side-mask"></i>
+            <div>
+            <h3>
+              Wear a mask
+            </h3>
+            <ul>
+              <li>
+                Everyone ages 2 years and older should properly wear a well-fitting mask indoors in public in areas of substantial or high community transmission, regardless of vaccination status.
+                You might choose to wear a mask regardless of the level of community transmission, if you or someone in your household is at increased risk for severe disease or has a weakened immune system, or if someone in your household is not up to date on their COVID-19 vaccines or not eligible to receive COVID-19 vaccines.
+              </li>
+              <li>
+                Improve how well your mask protects you, and learn about how to choose a mask to protect yourself and others.
+              </li>
+              <li>
+                People who have a condition or are taking medications that weaken their immune system may not be fully protected even if they are up to date on their COVID-19 vaccines. They should continue to take all precautions recommended for unvaccinated people, including properly wearing a well-fitted mask, until advised otherwise by their healthcare provider.
+              </li>
+            </ul>
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-left">
+            <i class="fa-solid fa-people-arrows-left-right"></i>
+            <div>
+            <h3>
+              Stay 6 feet away from others
+            </h3>
+            <ul>
+              <li>
+                Inside your home: Avoid close contact with people who are sick, if possible. If possible, maintain 6 feet between the person who is sick and other household members. If you are taking care of someone who is sick, make sure you properly wear a well-fitting mask and follow other steps to protect yourself.
+              </li>
+              <li>
+                Indoors in public: If you are not up to date on COVID-19 vaccines, stay at least 6 feet away from other people, especially if you are at higher risk of getting very sick with COVID-19.
+              </li>
+            </ul>
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-right">
+            <i class="fa-solid fa-users-slash"></i>
+            <div>
+            <h3>
+              Avoid poorly ventilated spaces and crowds
+            </h3>
+            <ul>
+              <li>
+                If indoors, bring in fresh air by opening windows and doors, if possible.
+              </li>
+              <li>
+                If you are at increased risk of getting very sick from COVID-19, avoid crowded places and indoor spaces that do not have fresh air from the outdoors.
+                virus light icon.
+              </li>
+            </ul>
+            </div>
+          </div>
+          
+        </section>
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-left">
+            <i class="fa-solid fa-virus-covid"></i>
+            <div>
+            <h3>
+              Test to prevent spread to others
+            </h3>
+            <ul>
+              <li>
+                Tests for SARS-CoV-2(the virus that causes COVID-19) tell you if you have an infection at the time of the test. This type of test is called a viral test because it looks for viral infection.
+              </li>
+              <li>
+                Regardless of the test type you select, a positive test result means that you have an infection and should isolate and inform your close contacts to avoid spreading disease to others.
+              </li>
+              <li>
+                Over-the-counter self-tests are viral tests that can be used at home or anywhere, are easy to use, and produce rapid results. Anyone can use self-tests, regardless of their vaccination status or whether they have symptoms.
+                COVID-19 self-tests are one of many risk-reduction measures, along with vaccination, masking, and physical distancing, that protect you and others by reducing the chances of spreading COVID-19.
+              </li>
+            </ul>
+            </div>
+          </div>
+          
+        </section>
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-right">
+            <i class="fa-solid fa-hands-bubbles"></i>
+            <div>
+            <h3>
+              Wash your hands often
+            </h3>
+            <ul>
+              <li>
+                Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your continerElements, coughing, or sneezing.
+              </li>
+              <li>
+                If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.
+              </li>
+            </ul>
+            </div>
+          </div>
+          
+        </section>
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-left">
+            <i class="fa-solid fa-pump-medical"></i>
+            <div>
+            <h3>
+              Clean and disinfect
+            </h3>
+            <ul>
+              <li>
+                Clean high touch surfaces regularly or as needed and after you have visitors in your home. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.
+              </li>
+            </ul>
+            </div>
+          </div>
+          
+        </section>
+        <section class="scrollContainer">
+          <div class="scrollElement elements slide-right">
+            <i class="fa-solid fa-head-side-virus"></i>
+            <div>
+            <h3>
+              Monitor your health daily
+            </h3>
+            <ul>
+              <li>
+                Be alert for symptoms
+              </li>
+              <li>
+                Monitoring symptoms is especially important if you are running errands, going into the office or workplace, and in settings where it may be difficult to keep a physical distance of 6 feet.
+              </li>
+            </ul>
+            </div>
+          </div>
+        </section> 
+      </div>
+  </section>
+
+  <footer>
+    <div class="social">
+    <a href="https://github.com/DevUa3"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/uriel-acu%C3%B1a-avila-677662203/"><i class="fa-brands fa-github-square"></i></a>
+  </div>
+  </footer>
+  
+
+</body>
+</html>
